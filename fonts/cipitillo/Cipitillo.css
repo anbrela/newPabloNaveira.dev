@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Cipitillo';
+    src: url('fonts/Cipitillo.eot');
+    src: url('fonts/Cipitillo.eot') format('embedded-opentype'),
+         url('fonts/Cipitillo.woff2') format('woff2'),
+         url('fonts/Cipitillo.woff') format('woff'),
+         url('fonts/Cipitillo.ttf') format('truetype'),
+         url('fonts/Cipitillo.svg#Cipitillo') format('svg');
+}

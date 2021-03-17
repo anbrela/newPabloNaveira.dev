@@ -1,0 +1,200 @@
+
+:root {
+    --blanco: #C3BABA;
+    --negro: #020122;
+    --rosa: #D81E5B;
+
+}
+
+
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Jura', sans-serif;
+}
+
+
+@font-face {
+    font-family: 'Cipitillo';
+    src: url('/newPabloNaveira.dev/fonts/cipitillo/fonts/Cipitillo.eot');
+    src: url('/newPabloNaveira.dev/fonts/cipitillo/fonts/Cipitillo.eot') format('embedded-opentype'),
+         url('/newPabloNaveira.dev/fonts/cipitillo/fonts/Cipitillo.woff2') format('woff2'),
+         url('/newPabloNaveira.dev/fonts/cipitillo/fonts/Cipitillo.woff') format('woff'),
+         url('/newPabloNaveira.dev/fonts/cipitillo/fonts/Cipitillo.ttf') format('truetype'),
+         url('/newPabloNaveira.dev/fonts/cipitillo/fonts/Cipitillo.svg') format('svg');
+}
+
+
+.landing {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #131313;
+    display: flex;
+    justify-content: center;
+}
+
+.landing img {
+    width: 100%;
+    z-index: 1;
+    margin-left: 900px;
+}
+
+.landing::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background: black;
+    opacity: 0.85;
+}
+
+
+.container {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 4;
+
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+.title .name {
+    font-family: "cipitillo";
+    font-size: 80px;
+    color: #f7f7f7;
+
+}
+
+.title .name span {
+    font-size: 100px;
+    margin-right: -20px;
+    color: #D81E5B;
+}
+
+.subtitle {
+    color: #f7f7f7;
+    font-family: "cipitillo";
+    font-size: 60px;
+    margin-top: -90px;
+
+}
+
+.subtitle span {
+    height: 200px;
+    font-size: 70px;
+    position: absolute;
+    display: inline-block;
+    transform: rotate(17deg);
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #FAF33E;
+    animation: fall 1s linear 1;
+}
+
+@keyframes fall {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30% {
+        transform: rotate(12deg);
+    }
+
+    50% {
+        transform: rotate(14deg);
+    }
+
+    60% {
+        transform: rotate(11deg);
+    }
+
+    80% {
+        transform: rotate(17deg);
+    }
+
+    100% {
+        transform: rotate(17deg);
+    }
+
+}
+
+
+.tags {
+    display: flex;
+    max-width: 500px;
+    max-height: 400px;
+    flex-wrap: wrap;
+}
+
+.tag-item {
+    padding: 20px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    color:#222823;
+    background: #A7A2A9;
+    border-radius: 3px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-family: "cipitillo";
+
+}
+
+
+.sleep {
+    position: absolute;
+    right: 0px;
+    z-index: 10;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+}
+
+
+.sleep p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.sleep button {
+    width: 70px;
+    height: 70px;
+    border: 1px solid var(--rosa);
+    border-radius: 100%;
+    background: url(/newPabloNaveira.dev/img/white.jpg);
+    background-repeat: no-repeat;
+    background-size: 0% 0%;
+    cursor: pointer;
+    pointer-events: auto;
+
+}
+
+.sleep button:focus {
+    outline: none;
+    border: none;
+}
