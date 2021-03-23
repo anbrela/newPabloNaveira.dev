@@ -43,7 +43,7 @@ left.mousedown(() => {;
             
           if (count == 8) {
 
-            window.open('../pages/elect.html', '_blank');
+            window.open('../pages/elect.html', '_self');
              }
 
              if (holdActive !== true) {
