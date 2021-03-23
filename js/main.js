@@ -44,7 +44,7 @@ function onMouseDown(){
 
           if (count == 100) {
 
-            window.open('../pages/elect.html', '_blank');
+            window.open('../pages/elect.html', '_self');
 
 
 

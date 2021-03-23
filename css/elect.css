@@ -137,3 +137,249 @@ html,body {
     z-index: 0;
 }
 
+
+.bubble {
+    position: absolute;
+    top:500px;
+    right: -300px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: var(--rosa);
+    z-index: 10;
+    display: none;
+}
+
+.bubble1 {
+    position: absolute;
+    top:-100px;
+    right: -300px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: var(--rosa);
+    z-index: 10;
+    display: none;
+
+}
+
+.bubble2 {
+    position: absolute;
+    top:200px;
+    right: -300px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: var(--rosa);
+    z-index: 10;
+    display: none;
+
+}
+
+.bubble3 {
+    position: absolute;
+    top:190px;
+    right: -300px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: var(--rosa);
+    z-index: 10;
+    display: none;
+
+}
+
+.bubble4 {
+    position: absolute;
+    top:350px;
+    right: -300px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: var(--rosa);
+    z-index: 10;
+    display: none;
+
+}
+
+.bubble5 {
+    position: absolute;
+    bottom:100px;
+    right: -300px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: var(--rosa);
+    z-index: 10;
+    display: none;
+
+}
+
+.bubble6 {
+    position: absolute;
+    bottom:-30px;
+    right: -300px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: var(--rosa);
+    z-index: 10;
+    display: none;
+
+}
+
+
+ .bubble.animation {
+     display: flex;
+    animation: move 9s linear 1;
+} 
+
+
+
+
+@keyframes move {
+    0% {
+        transform: translateX(200px);
+        
+    }
+
+    100% {
+        transform: translateX(-2000px);
+    }
+}
+
+.bubble1.animation2 {
+    display: flex;
+
+    animation: move2 6s linear 1;
+}
+
+
+@keyframes move2 {
+    0% {
+        transform: translateX(200px);
+    }
+
+    100% {
+        transform: translateX(-2000px);
+    }
+}
+
+.bubble2.animation3 {
+    display: flex;
+
+    animation: move3 7s linear 1;
+}
+
+@keyframes move3 {
+    0% {
+        transform: translateX(300px);
+        
+    }
+
+    100% {
+        transform: translateX(-2000px);
+    }
+}
+
+
+.bubble3.animation4 {
+    display: flex;
+
+    animation: move4 6s linear 1;
+}
+
+@keyframes move4 {
+    0% {
+        transform: translateX(300px);
+        
+    }
+
+    100% {
+        transform: translateX(-2000px);
+    }
+}
+
+.bubble4.animation5 {
+    display: flex;
+
+    animation: move5 7s linear 1 ;
+}
+
+@keyframes move5 {
+    0% {
+        transform: translateX(300px);
+        
+    }
+
+    100% {
+        transform: translateX(-2000px);
+    }
+}
+
+
+.bubble5.animation6 {
+    display: flex;
+
+    animation: move6 8s linear 1;
+}
+
+@keyframes move6 {
+    0% {
+        transform: translateX(300px);
+        
+    }
+
+    100% {
+        transform: translateX(-2000px);
+    }
+}
+
+
+
+.bubble6.animation7{
+    display: flex;
+
+    animation: move7 7s linear 1;
+}
+
+@keyframes move7 {
+    0% {
+        transform: translateX(300px);
+        
+    }
+
+    100% {
+        transform: translateX(-2000px);
+    }
+}
+
+
+.backBubble {
+    width: 0px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: var(--rosa);
+    z-index: 9;
+    display: none;
+}
+
+.backBubble.active {
+    display: flex;
+    animation: back 5s 1s linear 1 forwards;
+
+}
+
+@keyframes back {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 100vw;
+    }
+}
+
+
