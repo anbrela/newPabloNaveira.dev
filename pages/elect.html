@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/elect.css">
     <title>Election - Pablo Naveira</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/2018c2b463.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -13,16 +16,37 @@
 
         <div class="container">
 
-            <div class="window1">
-                <img src="/img/skills.jpg" alt="">
-            </div>
-            <div class="window2">
-                <img src="/img/works.jpg" alt="">
+            <div class="imagenes">
+                <img id="skills" src="/img/skills.jpg" alt="">
+           
+                <img id="works" src="/img/works.jpg" alt="">
             </div>
 
-            <div id="prueba"></div>
+            <div class="keyboard">
+
+                <h2>Mantén para elegir</h2>
+
+                <div class="icons">
+
+                    
+                <button class="left" id="left">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+                </button>
+                <button class="right" id="right">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+                </button>
+                </div>
+
+
+            </div>
+
 
         </div>
+
+        <canvas id="lines"></canvas>
+
 
     </section>
     
