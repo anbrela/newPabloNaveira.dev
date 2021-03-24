@@ -28,9 +28,8 @@ function onMouseDown(){
 		holdStarter = null;
 		holdActive = true; 
         
-        console.log(btn.css("border"))
 
-        let count = 0;
+        let count = 20;
 
         interval = setInterval(function() {
 
@@ -38,11 +37,13 @@ function onMouseDown(){
             console.log("pasa");
             console.log(count);
             let percent = count + "%";
-
             
-          btn.css("background-size", "100%" + percent);
 
-          if (count == 100) {
+          
+          btn.css("width", percent);
+          btn.css("height", percent);
+
+          if (count == 60) {
 
             window.open('../pages/elect.html', '_self');
 
