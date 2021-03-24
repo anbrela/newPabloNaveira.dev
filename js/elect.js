@@ -20,6 +20,7 @@ left.mousedown(() => {
   holdStarter = setTimeout(function () {
     holdStarter = null;
     holdActive = true;
+    var count = 0;
 
     bubble.classList.add("animation");
     back.classList.add("active");
@@ -29,7 +30,40 @@ left.mousedown(() => {
     bubble4.classList.add("animation5");
     bubble5.classList.add("animation6");
     bubble6.classList.add("animation7");
+    
+    
+    interval = setInterval(function() {
+
+      count += 10; 
+      console.log("pasa");
+      console.log(count);
+
+      
+    if (count == 50) {
+
+      setTimeout(() => {
+        window.location.href = "/pages/new.html";
+      }, 3000)
+
+
+       }
+
+       if (holdActive !== true) {
+          clearInterval(interval);
+
+       }
+
+
+
+    }, 50);   
+
+
   }, holdDelay);
+
+  
+
+
+
 });
 
 left.mouseup(onMouseUp);

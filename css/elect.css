@@ -211,7 +211,7 @@ body {
 
 .bubble.animation {
   display: flex;
-  animation: move 9s linear 1;
+  animation: move 3s linear 1;
 }
 
 @keyframes move {
@@ -227,7 +227,7 @@ body {
 .bubble1.animation2 {
   display: flex;
 
-  animation: move2 6s linear 1;
+  animation: move2 2.6s linear 1;
 }
 
 @keyframes move2 {
@@ -243,7 +243,7 @@ body {
 .bubble2.animation3 {
   display: flex;
 
-  animation: move3 7s linear 1;
+  animation: move3 2.7s linear 1;
 }
 
 @keyframes move3 {
@@ -259,7 +259,7 @@ body {
 .bubble3.animation4 {
   display: flex;
 
-  animation: move4 6s linear 1;
+  animation: move4 3s linear 1;
 }
 
 @keyframes move4 {
@@ -275,7 +275,7 @@ body {
 .bubble4.animation5 {
   display: flex;
 
-  animation: move5 7s linear 1;
+  animation: move5 2.4s linear 1;
 }
 
 @keyframes move5 {
@@ -291,12 +291,12 @@ body {
 .bubble5.animation6 {
   display: flex;
 
-  animation: move6 8s linear 1;
+  animation: move6 2.4s linear 1;
 }
 
 @keyframes move6 {
   0% {
-    transform: translateX(300px);
+    transform: translateX(340px);
   }
 
   100% {
@@ -307,12 +307,44 @@ body {
 .bubble6.animation7 {
   display: flex;
 
-  animation: move7 7s linear 1;
+  animation: move7 2.6s linear 1;
 }
 
 @keyframes move7 {
   0% {
-    transform: translateX(300px);
+    transform: translateX(350px);
+  }
+
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+
+.bubble7.animation8 {
+  display: flex;
+
+  animation: move8 2.3s linear 1;
+}
+
+@keyframes move8 {
+  0% {
+    transform: translateX(240px);
+  }
+
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+
+.bubble7.animation9 {
+  display: flex;
+
+  animation: move9 2.1s linear 1;
+}
+
+@keyframes move9 {
+  0% {
+    transform: translateX(200px);
   }
 
   100% {
@@ -333,7 +365,7 @@ body {
 
 .backBubble.active {
   display: flex;
-  animation: back 6.5s 1s linear 1 forwards;
+  animation: back 2s 0.5s linear 1 forwards;
 }
 
 @keyframes back {
