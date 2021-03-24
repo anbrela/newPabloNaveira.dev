@@ -1,69 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/elect.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/elect.css" />
     <title>Election - Pablo Naveira</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://kit.fontawesome.com/2018c2b463.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
+    <script
+      src="https://kit.fontawesome.com/2018c2b463.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <section class="elect">
+      <div class="container">
+        <div class="imagenes">
+          <img id="skills" src="/img/skills.jpg" alt="" />
 
-        <div class="container">
-
-            <div class="imagenes">
-                <img id="skills" src="/img/skills.jpg" alt="">
-           
-                <img id="works" src="/img/works.jpg" alt="">
-            </div>
-
-            <div class="keyboard">
-
-                <h2>Mantén para elegir</h2>
-
-                <div class="icons">
-
-                    
-                <button class="left" id="left">
-                    <i class="fa fa-angle-left" aria-hidden="true"></i>
-
-                </button>
-                <button class="right" id="right">
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-
-                </button>
-                </div>
-
-
-            </div>
-
-
+          <img id="works" src="/img/works.jpg" alt="" />
         </div>
-        <canvas id="lines"></canvas>
 
-        <div id="bubble" class="bubble"></div>
-        <div id="bubble1 " class="bubble1"></div>
-        <div id="bubble2 " class="bubble2"></div>
-        <div id="bubble3 " class="bubble3"></div>
-        <div id="bubble4 " class="bubble4"></div>
-        <div id="bubble5 " class="bubble5"></div>
-        <div id="bubble6 " class="bubble6"></div>
+        <div class="keyboard">
+          <h2>Mantén para elegir</h2>
 
-   
-     
-        <div class="backBubble" id="backBubble"></div>
-     
+          <div class="icons">
+            <button class="left" id="left">
+              <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </button>
+            <button class="right" id="right">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <canvas id="lines"></canvas>
 
+      <div id="bubble" class="bubble"></div>
+      <div id="bubble1" class="bubble1"></div>
+      <div id="bubble2" class="bubble2"></div>
+      <div id="bubble3" class="bubble3"></div>
+      <div id="bubble4" class="bubble4"></div>
+      <div id="bubble5" class="bubble5"></div>
+      <div id="bubble6" class="bubble6"></div>
 
-
+      <div class="backBubble" id="backBubble"></div>
     </section>
-    
 
-    <script src="/js/elect.js" ></script>
-</body>
+    <script src="/js/elect.js"></script>
+  </body>
 </html>

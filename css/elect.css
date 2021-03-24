@@ -1,385 +1,347 @@
-
 :root {
-    --blanco: #C3BABA;
-    --negro: #020122;
-    --rosa: #D81E5B;
-    --amarillo:  #FAF33E;
-
+  --blanco: #c3baba;
+  --negro: #020122;
+  --rosa: #d81e5b;
+  --amarillo: #faf33e;
 }
 
 @font-face {
-    font-family: 'Cipitillo';
-    src: url('../fonts/cipitillo/fonts/Cipitillo.eot');
-    src: url('../fonts/cipitillo/fonts/Cipitillo.eot') format('embedded-opentype'),
-         url('../fonts/cipitillo/fonts/Cipitillo.woff2') format('woff2'),
-         url('../fonts/cipitillo/fonts/Cipitillo.woff') format('woff'),
-         url('../fonts/cipitillo/fonts/Cipitillo.ttf') format('truetype'),
-         url('../fonts/cipitillo/fonts/Cipitillo.svg') format('svg');
+  font-family: "Cipitillo";
+  src: url("../fonts/cipitillo/fonts/Cipitillo.eot");
+  src: url("../fonts/cipitillo/fonts/Cipitillo.eot") format("embedded-opentype"),
+    url("../fonts/cipitillo/fonts/Cipitillo.woff2") format("woff2"),
+    url("../fonts/cipitillo/fonts/Cipitillo.woff") format("woff"),
+    url("../fonts/cipitillo/fonts/Cipitillo.ttf") format("truetype"),
+    url("../fonts/cipitillo/fonts/Cipitillo.svg") format("svg");
 }
 
-
-
-html,body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    font-family: 'Jura', sans-serif;
-    background: var(--negro);
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: "Jura", sans-serif;
+  background: var(--negro);
 }
-
 
 .elect {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-
 .container {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    z-index: 3;
-
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
 }
 
 .imagenes {
-    width: 100%;
-    display: flex;
-    margin-top: 50px;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
 }
-
 
 .imagenes img {
-    max-width: 700px;
-    margin: 5px;
-    border: 5px solid var(--rosa);
+  max-width: 700px;
+  margin: 5px;
+  border: 5px solid var(--rosa);
 }
 
-
-
-
 .window1 {
-    border: 2px solid var(--rosa);
+  border: 2px solid var(--rosa);
 }
 
 .keyboard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
 }
 
-
 .keyboard h2 {
-    color: white;
-    font-family: 'Cipitillo';
-    font-size: 30px;
-    letter-spacing: 5px;
+  color: white;
+  font-family: "Cipitillo";
+  font-size: 30px;
+  letter-spacing: 5px;
 }
 
 .icons {
-    display: flex;
+  display: flex;
 }
 
 .left {
-    width: 50px;
-    height: 50px;
-    background: white;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    cursor: pointer;
-    border: none;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
 }
 .left:active {
-    background: var(--rosa);
+  background: var(--rosa);
 }
 
 .left i {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .right {
-    width: 50px;
-    height: 50px;
-    background: white;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: none;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
 }
 
 .right:active {
-    background: var(--rosa);
+  background: var(--rosa);
 }
 
 .right i {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 #lines {
-    position: absolute;
-    z-index: 0;
+  position: absolute;
+  z-index: 0;
 }
 
-
 .bubble {
-    position: absolute;
-    top:500px;
-    right: -300px;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: var(--rosa);
-    z-index: 10;
-    display: none;
+  position: absolute;
+  top: 500px;
+  right: -300px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: var(--rosa);
+  z-index: 10;
+  display: none;
 }
 
 .bubble1 {
-    position: absolute;
-    top:-100px;
-    right: -300px;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: var(--rosa);
-    z-index: 10;
-    display: none;
-
+  position: absolute;
+  top: -100px;
+  right: -300px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: var(--rosa);
+  z-index: 10;
+  display: none;
 }
 
 .bubble2 {
-    position: absolute;
-    top:200px;
-    right: -300px;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: var(--rosa);
-    z-index: 10;
-    display: none;
-
+  position: absolute;
+  top: 200px;
+  right: -300px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: var(--rosa);
+  z-index: 10;
+  display: none;
 }
 
 .bubble3 {
-    position: absolute;
-    top:190px;
-    right: -300px;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: var(--rosa);
-    z-index: 10;
-    display: none;
-
+  position: absolute;
+  top: 190px;
+  right: -300px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: var(--rosa);
+  z-index: 10;
+  display: none;
 }
 
 .bubble4 {
-    position: absolute;
-    top:350px;
-    right: -300px;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: var(--rosa);
-    z-index: 10;
-    display: none;
-
+  position: absolute;
+  top: 350px;
+  right: -300px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: var(--rosa);
+  z-index: 10;
+  display: none;
 }
 
 .bubble5 {
-    position: absolute;
-    bottom:100px;
-    right: -300px;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: var(--rosa);
-    z-index: 10;
-    display: none;
-
+  position: absolute;
+  bottom: 100px;
+  right: -300px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: var(--rosa);
+  z-index: 10;
+  display: none;
 }
 
 .bubble6 {
-    position: absolute;
-    bottom:-30px;
-    right: -300px;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: var(--rosa);
-    z-index: 10;
-    display: none;
-
+  position: absolute;
+  bottom: -30px;
+  right: -300px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: var(--rosa);
+  z-index: 10;
+  display: none;
 }
 
-
- .bubble.animation {
-     display: flex;
-    animation: move 9s linear 1;
-} 
-
-
-
+.bubble.animation {
+  display: flex;
+  animation: move 9s linear 1;
+}
 
 @keyframes move {
-    0% {
-        transform: translateX(200px);
-        
-    }
+  0% {
+    transform: translateX(200px);
+  }
 
-    100% {
-        transform: translateX(-2000px);
-    }
+  100% {
+    transform: translateX(-2000px);
+  }
 }
 
 .bubble1.animation2 {
-    display: flex;
+  display: flex;
 
-    animation: move2 6s linear 1;
+  animation: move2 6s linear 1;
 }
 
-
 @keyframes move2 {
-    0% {
-        transform: translateX(200px);
-    }
+  0% {
+    transform: translateX(200px);
+  }
 
-    100% {
-        transform: translateX(-2000px);
-    }
+  100% {
+    transform: translateX(-2000px);
+  }
 }
 
 .bubble2.animation3 {
-    display: flex;
+  display: flex;
 
-    animation: move3 7s linear 1;
+  animation: move3 7s linear 1;
 }
 
 @keyframes move3 {
-    0% {
-        transform: translateX(300px);
-        
-    }
+  0% {
+    transform: translateX(300px);
+  }
 
-    100% {
-        transform: translateX(-2000px);
-    }
+  100% {
+    transform: translateX(-2000px);
+  }
 }
 
-
 .bubble3.animation4 {
-    display: flex;
+  display: flex;
 
-    animation: move4 6s linear 1;
+  animation: move4 6s linear 1;
 }
 
 @keyframes move4 {
-    0% {
-        transform: translateX(300px);
-        
-    }
+  0% {
+    transform: translateX(300px);
+  }
 
-    100% {
-        transform: translateX(-2000px);
-    }
+  100% {
+    transform: translateX(-2000px);
+  }
 }
 
 .bubble4.animation5 {
-    display: flex;
+  display: flex;
 
-    animation: move5 7s linear 1 ;
+  animation: move5 7s linear 1;
 }
 
 @keyframes move5 {
-    0% {
-        transform: translateX(300px);
-        
-    }
+  0% {
+    transform: translateX(300px);
+  }
 
-    100% {
-        transform: translateX(-2000px);
-    }
+  100% {
+    transform: translateX(-2000px);
+  }
 }
 
-
 .bubble5.animation6 {
-    display: flex;
+  display: flex;
 
-    animation: move6 8s linear 1;
+  animation: move6 8s linear 1;
 }
 
 @keyframes move6 {
-    0% {
-        transform: translateX(300px);
-        
-    }
+  0% {
+    transform: translateX(300px);
+  }
 
-    100% {
-        transform: translateX(-2000px);
-    }
+  100% {
+    transform: translateX(-2000px);
+  }
 }
 
+.bubble6.animation7 {
+  display: flex;
 
-
-.bubble6.animation7{
-    display: flex;
-
-    animation: move7 7s linear 1;
+  animation: move7 7s linear 1;
 }
 
 @keyframes move7 {
-    0% {
-        transform: translateX(300px);
-        
-    }
+  0% {
+    transform: translateX(300px);
+  }
 
-    100% {
-        transform: translateX(-2000px);
-    }
+  100% {
+    transform: translateX(-2000px);
+  }
 }
 
-
 .backBubble {
-    width: 0px;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    position: absolute;
-    background: var(--rosa);
-    z-index: 9;
-    display: none;
+  width: 0px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: var(--rosa);
+  z-index: 9;
+  display: none;
 }
 
 .backBubble.active {
-    display: flex;
-    animation: back 5s 1s linear 1 forwards;
-
+  display: flex;
+  animation: back 6.5s 1s linear 1 forwards;
 }
 
 @keyframes back {
-    0% {
-        width: 0px;
-    }
+  0% {
+    width: 0px;
+  }
 
-    100% {
-        width: 100vw;
-    }
+  100% {
+    width: 100vw;
+  }
 }
-
-
