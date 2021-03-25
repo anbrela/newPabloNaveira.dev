@@ -1,0 +1,116 @@
+:root {
+    --blanco: #c3baba;
+    --negro: #020122;
+    --rosa: #d81e5b;
+    --amarillo: #faf33e;
+  }
+
+  @font-face {
+    font-family: "Cipitillo";
+    src: url("../fonts/cipitillo/fonts/Cipitillo.eot");
+    src: url("../fonts/cipitillo/fonts/Cipitillo.eot") format("embedded-opentype"),
+      url("../fonts/cipitillo/fonts/Cipitillo.woff2") format("woff2"),
+      url("../fonts/cipitillo/fonts/Cipitillo.woff") format("woff"),
+      url("../fonts/cipitillo/fonts/Cipitillo.ttf") format("truetype"),
+      url("../fonts/cipitillo/fonts/Cipitillo.svg") format("svg");
+  }
+
+  body,html {
+      width: 100%;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      background: var(--rosa);
+  }
+
+
+
+  .game {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+  }
+
+  .container {
+      width: 80%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+  }
+
+  .container h2 {
+      font-family: "Cipitillo";
+      color: white;
+      font-size: 50px;
+      letter-spacing: 4px;
+  }
+
+  .container h2 span {
+      color: var(--amarillo);
+  }
+
+
+
+  .hole {
+    
+      position: absolute;
+      top: 30%;
+      left: 30%;
+  }
+
+  .hole2 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+.hole3 {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+}
+
+.hole4 {
+    position: absolute;
+    left: 30%;
+    bottom: 30%;
+}
+
+.hole5 {
+    position: absolute;
+    bottom: 30%;
+    right: 28%;
+}
+
+.mole {
+    width: 150px;
+    margin-left: -5px;
+    position: absolute;
+    margin-top: -60px;
+    display: none;
+}
+
+.rock {
+    width: 150px;
+    position: absolute;
+}
+
+
+.mole.active {
+    display: flex;
+    animation: beep 1s linear 1;
+}
+
+@keyframes beep {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+ 
+  

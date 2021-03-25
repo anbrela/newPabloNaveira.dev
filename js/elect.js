@@ -2,12 +2,9 @@ const right = $("#right");
 const left = $("#left");
 
 const bubble = document.getElementById("bubble");
-const bubble1 = document.getElementById("bubble1");
+
 const bubble2 = document.getElementById("bubble2");
-const bubble3 = document.getElementById("bubble3");
-const bubble4 = document.getElementById("bubble4");
-const bubble5 = document.getElementById("bubble5");
-const bubble6 = document.getElementById("bubble6");
+
 const back = document.getElementById("backBubble");
 
 var holdStarter = null;
@@ -21,16 +18,9 @@ left.mousedown(() => {
     holdStarter = null;
     holdActive = true;
     var count = 0;
-
-    bubble.classList.add("animation");
-    back.classList.add("active");
-    bubble1.classList.add("animation2");
-    bubble2.classList.add("animation3");
-    bubble3.classList.add("animation4");
-    bubble4.classList.add("animation5");
-    bubble5.classList.add("animation6");
-    bubble6.classList.add("animation7");
     
+    back.classList.add("active");
+
     
     interval = setInterval(function() {
 
@@ -39,11 +29,10 @@ left.mousedown(() => {
       console.log(count);
 
       
-    if (count == 50) {
+    if (count == 25) {
 
-      setTimeout(() => {
-        window.location.href = "/pages/new.html";
-      }, 3000)
+      
+        window.location.href = "/pages/mole.html";
 
 
        }
